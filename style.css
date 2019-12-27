@@ -238,13 +238,13 @@ bulma table
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 720px) {
+@media screen and (min-width: 400px) and (max-width: 720px) {
   .profile .profile_name {
     display: block;
     /* position: relative;
     top: -180px; */
     text-align: left;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 10px;
     margin-left: 280px;
   }
@@ -264,3 +264,5 @@ bulma table
     margin-top: 100px;
   }
 }
+
+
