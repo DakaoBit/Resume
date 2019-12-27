@@ -22,7 +22,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="relative">
+<body>
+    <div class="navbox">
+        <div class="navbox_link">
+            <ul>
+                <li><a href="#Contact">聯絡資訊</a> </li>
+                <li><a href="#Education">學位</a></li>
+                <li><a href="#Skills">技術能力</a></li>
+                <li><a href="#Profile">個人簡述</a></li>
+                <li><a href="#WorkExperience">工作經驗</a></li>
+                <li><a href="#Checklist">個人技術清單</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="row no-gutters">
         <div class="profile">
             <img style="width: 200px;" class="" src="https://i.imgur.com/tEaQ0BP.png" alt="">
@@ -36,7 +48,7 @@
         <!-- Sidebar -->
         <div class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <!-- Contact -->
-            <div style="margin-top: 350px;" class="info_block">
+            <div id="Contact" style="margin-top: 350px;" class="info_block">
                 <div class="info_title">Contact</div>
                 <div class="info_content">
                     <span><i class="fas fa-lg fa-mobile-alt"></i> 0929 738 328</span>
@@ -51,7 +63,7 @@
                 </div>
             </div>
             <!-- Education -->
-            <div class="info_block">
+            <div id="Education" class="info_block">
                 <div class="info_title">Education</div>
                 <div class="info_content">
                     <!-- <span>Ming Chuan University</span> -->
@@ -74,8 +86,8 @@
                 </div>
             </div>
 
-            <!-- Skill -->
-            <div class="info_block">
+            <!-- Skills -->
+            <div id="Skills" class="info_block">
                 <div class="info_title">Skills</div>
                 <div class="info_content">
                     <span>前端</span>
@@ -107,7 +119,7 @@
         <!-- Main -->
         <div class="main col-xs-12 col-sm-12 col-md-8 col-lg-8">
             <!-- Profile -->
-            <div class="info_block">
+            <div id="Profile" class="info_block">
                 <div class="info_title_reverse">Profile</div>
                 <div class="info_content">
                     <p>
@@ -116,7 +128,7 @@
                 </div>
             </div>
             <!-- Work Experience -->
-            <div class="info_block">
+            <div id="WorkExperience" class="info_block">
                 <div class="info_title_reverse">Work Experience</div>
                 <div class="info_content">
                     <p>簡述：</p>
@@ -141,9 +153,10 @@
             </div>
         </div>
     </div>
+    <!-- Checklist -->
     　<div class="row no-gutters">
         <div class="checklist col-12 mt-0">
-            <div class="info_block">
+            <div id="Checklist" class="info_block">
                 <div class="info_title_reverse">Skill Set Checklist</div>
                 <div class="info_content">
                     <p>評等說明</p>
@@ -181,10 +194,8 @@
                                     <td>我精通這項技術的知識，知道該技術的發展趨勢，也了解相關技術的優劣競爭力</td>
                                 </tr>
                             </tbody>
-
                         </table>
                     </div>
-
                 </div>
             </div>
 
@@ -355,7 +366,7 @@
                                     <tr>
                                         <td>T-SQL</td>
                                         <td>3</td>
-                                    </tr> 
+                                    </tr>
                                 </table>
                             </div>
                         </div>
@@ -539,9 +550,10 @@
                                         <td>3</td>
                                     </tr>
                                     <tr>
-                                        <td>Web Performance Optimiztion and Tool(Request combined, static files, Page Speed...)</td>
+                                        <td>Web Performance Optimiztion and Tool(Request combined, static files, Page
+                                            Speed...)</td>
                                         <td>2</td>
-                                    </tr>                     
+                                    </tr>
                                 </table>
                             </div>
                         </div>
@@ -551,6 +563,18 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $("a[href^='#']").click(function (e) {
+            e.preventDefault();
+
+            var position = $($(this).attr("href")).offset().top;
+
+            $("body, html").animate({
+                scrollTop: position
+            } /* speed */);
+        });
+    </script>
 </body>
 
 </html>
