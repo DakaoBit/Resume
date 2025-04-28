@@ -17,13 +17,12 @@
     <meta name="rating" content="General">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="navbox">
+    <!-- <div class="navbox">
         <div class="navbox_link">
             <ul>
                 <li><a href="#Contact">聯絡資訊</a> </li>
@@ -34,494 +33,138 @@
                 <li><a href="#Checklist">個人技術清單</a></li>
             </ul>
         </div>
-    </div>
-    <div class="row no-gutters">
-        <div class="profile">
-            <img style="width: 200px;" class="" src="https://i.imgur.com/tEaQ0BP.png" alt="">
-            <div class="profile_name">
-                王士豪
-            </div>
-            <div class="profile_enname">
-                Stan Wang
-            </div>
-        </div>
-        <!-- Sidebar -->
-        <div class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <!-- Contact -->
-            <div id="Contact" style="margin-top: 350px;" class="info_block">
-                <div class="info_title">Contact</div>
-                <div class="info_content">
-                    <span><i class="fas fa-lg fa-mobile-alt"></i> 0929 738 328</span>
-                    <span>
+    </div> -->
+    <div class="container">
+        <header class="header row">
+            <div class="col-8">
+                <h1 class="name">Stan Wang</h1>
+                <p>Experienced Senior Engineer with a strong background in system
+                    automation, web development, and project management. Adept at designing and implementing
+                    AGV operations and developing web-based platforms for material handling tasks.</p>
+                <p class="location"> Kaohsiung, Taiwan</p>
+                <div class="contact">
+                    <a href="https://github.com/stanwang" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/stanwang" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:stan@example.com" title="Email">
                         <i class="fas fa-envelope"></i>
-                        <a title="email" href="mailto:fish.0829@outlook.com">fish.0829@outlook.com</a>
-                    </span>
-                    <span>
-                        <i class="fab fa-github-alt"></i>
-                        <a title="github account" target="_blank"
-                            href="https://github.com/DakaoBit">https://github.com/DakaoBit</a>
-                    </span>
-                    <span>
-                        <i class="fab fa-linkedin-in"></i>
-                        <a title="Linkedin account" target="_blank"
-                            href="https://www.linkedin.com/in/stan-wang-46a00584/">Linkedin(stan-wang)</a>
-                    </span>
+                    </a>
                 </div>
             </div>
-            <!-- Education -->
-            <div id="Education" class="info_block">
-                <div class="info_title">Education</div>
-                <div class="info_content">
-                    <!-- <span>Ming Chuan University</span> -->
-                    <!-- <span>銘傳大學</span> -->
-                    <span>
-                        Master Degree <br>
-                        資訊管理所 <br>
-                        <!-- Department of Information Management <br> -->
-                        Ming Chuan University <br>
-                        2012 - 2014
-                    </span>
-                    <span>
-                        Bachelor degree <br>
-                        <!-- Department of Information Management <br> -->
-                        資訊管理系 <br>
-                        Ming Chuan University<br>
-                        2008 - 2012
-                    </span>
+            <div class="col-4">
+                <img class="profile_pic"
+                    src="https://media.licdn.com/dms/image/v2/C5603AQHp1qxFjHuYSA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1662807031256?e=1751500800&v=beta&t=Nuwf7W_JM9jrwL5KI3mFU6F9SAVhSeWO-PFAYfjqbY0"
+                    alt="Stan Wang">
 
-                </div>
             </div>
 
-            <!-- Skills -->
-            <div id="Skills" class="info_block">
-                <div class="info_title">Skills</div>
-                <div class="info_content">
-                    <span>前端</span>
-                    <ul>
-                        <li>Html, Pug, CSS, Sass, </li>
-                        <li>JS, JQuery,</li>
-                        <li>JS 架構：Vue.JS</li>
-                        <li>版控：Git</li>
-                        <li>SEO, 網頁優化</li>
-                    </ul>
-                    <span>後端</span>
-                    <ul>
-                        <li>語言：C#</li>
-                        <li>架構：ASP.NET MVC, ASP.NET Web Form, Web API</li>
-                        <li>架構設計：MVC,分層架構, 依賴性注入</li>
-                        <li>前後端聯繫：AJAX, SignalR</li>
-                    </ul>
-                    <span>能力</span>
-                    <ul>
-                        <li>Web Design</li>
-                        <li>Requirement Analysis & Design </li>
-                        <li>Architecture Design</li>
-                        <li>Self Problem Solving</li>
-                        <li>SEO</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Main -->
-        <div class="main col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            <!-- Profile -->
-            <div id="Profile" class="info_block">
-                <div class="info_title_reverse">Profile</div>
-                <div class="info_content">
+        </header>
+        <!--About-->
+        <section class="about">
+            <h2>About</h2>
+            <p>
+                Experienced Senior Engineer with over 8 years of professional experience in software development,
+                system automation, and project management. Skilled in designing and implementing AGV operations,
+                developing web-based platforms, and managing complex projects.
+                Adept at working in both front-end and back-end development,
+                with a strong focus on system analysis, architecture, and performance optimization.
+            </p>
+        </section>
+        <!-- Work Experience -->
+        <section class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li class="clearfix">
+                    <span class="job_title">■ Project Section Chief</span>
+                    <span class="location">高雄市</span>
+                    <span class="date">Sep 2022 – Mar 2025</span>
+                    <p class="company">捷廣系統整合 · Full-Time</p>
                     <p>
-                        &nbsp;&nbsp; &nbsp; &nbsp;高雄人，出生於 1988年，平常喜歡獲得新的思維模式和觀點，所以閒暇時會參與動、靜態的活動。
+                        Specializing in planning AGV (Automated Guided Vehicle) operations for various
+                        types of material handling tasks within customer factories or warehouse sites.
+                        Developing web-based platforms to present and manage all relevant information.
                     </p>
-                </div>
-            </div>
-            <!-- Work Experience-->
-            <div id="WorkExperience" class="info_block">
-                <div class="info_title_reverse">Work Experience</div>
-                <!-- 1 -->
-                <div class="info_content">
-                    <p>1. 華冠投資顧問公司 (2016年1月 ~ 2019年11月)</p>
+                </li>
+                <li class="clearfix">
+                    <span class="job_title">■ Senior Backend Engineer</span>
+                    <span class="location">高雄市</span>
+                    <span class="date">Mar 2022 – Sep 2022</span>
+                    <p class="company">Weixin · Full-Time</p>
                     <p>
-                        &nbsp; &nbsp; &nbsp; &nbsp;在華冠投資顧問公司時期，擔任網頁程式設計師的職位， 主要技術使用以ASP.NET MVC為主體結合Web
-                        API和前端技術。工作內容為自主開發與維護公司對外的兩個網站，為
-                        <a title="華冠投顧" target="_blank" href="https://www.hwa-guan.com.tw/Finance">華冠投顧</a> 和
-                        <a title="輕鬆投資學院" target="_blank" href="https://www.ezdiamond.com.tw">輕鬆投資學院</a>。 這兩個 B2C
-                        的網站運作主旨為：提供資訊流、金流的服務，以連結分析師與投資者之間的關係。
+                        Focused on back-end development, including working with ASP.NET MVC, Web API, and
+                        MS SQL. Contributed to the development of robust and scalable web applications.
                     </p>
-
-                    <p>開發經驗：</p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★網站前後台開發：細部的功能如一般使用者的會員註冊與登入、管理人員後台上稿、活動參與的報名機制...)。</p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★線上購物流程開發：建立購物車功能和單頁式的購物機制，提供使用者購買課程、影音等有價資訊。</p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★線上金流與電子發票整合經驗：與第三方的綠界支付和華南銀行合作，使用第三方 API的線上金流和電子發票與公司內部系統整合。</p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★金融性質的個人身分識別憑證：與第三方的台灣網路認證公司合作，由自行開發的線上合約簽署機制，整合第三方的WebServices，
-                        引導使用者完成基本資料、身分證上傳、客戶投資屬性、客戶盡職調查，以建立線上委任契約簽核。
-                    </p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★影音線上直播與聊天機制：使用SignalR，撰寫聊天通訊功能。</p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★其他第三方合作：與CMoney 和MoneyDJ合作，提供我方資訊內容的RSS。此外，也有與 CMoney 的 數據貓頭鷹
-                        API 的合作。</p>
-                </div>
-                <hr>
-                <!-- 2 -->
-                <div class="info_content">
-                    <p>2. 一宇數位科技股份有限公司 (2020年2月 ~ 現今)</p>
+                </li>
+                <li class="clearfix">
+                    <span class="job_title">■ Project Engineer</span>
+                    <span class="location">高雄市</span>
+                    <span class="date">Feb 2020 – Mar 2022</span>
+                    <p class="company">一宇數位科技股份有限公司（Learningdigital.Com，Inc.） · Full-Time</p>
                     <p>
-                        &nbsp; &nbsp; &nbsp; &nbsp;目前任職於一宇數位科技股份有限公司，擔任專案工程師的職位， 
-                        公司產品是數位學習系統並為客戶提供客製化需求開發和維護工作的服務內容，因為主要的服務對象為國內銀行、壽險、上市櫃公司，
-                        所以客製需求開發多以該產業的性質相關。主要技術使用以ASP.NET Web Form為結合前端技術，進行開發及維護的動作。
+                        Managed and executed various projects, ensuring timely delivery and quality
+                        outcomes. Worked closely with cross-functional teams to deliver successful project
+                        implementations.
                     </p>
-                
-                    <p>開發經驗：</p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★客製需求開發（如：例行性排程、報表、或與客戶系統進行資料對接）。</p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★Issue Tracking：因和許多客戶有維護關係，所以會處裡各種前後端奇形怪狀的問題、人為操作因素。</p>
-                    <p>&nbsp; &nbsp; &nbsp; &nbsp;★源碼掃描處理：因有些客戶有資安上的需求，所以會針對系統回掃後的報告進行資安修正。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Checklist -->
-    　<div class="row no-gutters">
-        <div class="checklist col-12 mt-0">
-            <div id="Checklist" class="info_block">
-                <div class="info_title_reverse">Skill Set Checklist</div>
-                <div class="info_content">
-                    <p>評等說明</p>
-                    <div class="table-container">
-                        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                            <tbody>
-                                <tr>
-                                    <th>0</td>
-                                    <td>Absolute Beginner</td>
-                                    <td>我對這樣技術不了解，也沒任何經驗</td>
-                                </tr>
-                                <tr>
-                                    <th>1</td>
-                                    <td>Rookie</td>
-                                    <td>我讀過這項技術的相關知識，也嘗試實作過該技術，但限於實驗階段，沒有正式上線。</td>
-                                </tr>
-                                <tr>
-                                    <th>2</td>
-                                    <td>Newbie</td>
-                                    <td>我以前在1-2個正式產品中使用過這種技術，有能力自主開發，但偶而需要他人指導。</td>
-                                </tr>
-                                <tr>
-                                    <th>3</td>
-                                    <td>Skilled</td>
-                                    <td>我至少在3個以上的正式產品中使用過這種技術，有能力自主開發，不需要他人指導。</td>
-                                </tr>
-                                <tr>
-                                    <th>4</td>
-                                    <td>Expert</td>
-                                    <td>對該技術掌握熟練，有能力可以教導其他新開發人員使用這項技術。</td>
-                                </tr>
-                                <tr>
-                                    <th>5</td>
-                                    <td>Guru</td>
-                                    <td>我精通這項技術的知識，知道該技術的發展趨勢，也了解相關技術的優劣競爭力</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info_block">
-                <div class="info_content">
-                    <p>自我評價</p>
-                    <hr>
-                    <p>.NET</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>C# and .NET Framework</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ASP.NET Web Form</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ASP.NET MVC</td>
-                                        <td>4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ASP.NET Web API</td>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ADO.NET</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>OWIN</td>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Unity</td>
-                                        <td>2</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>Window Form</td>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dapper</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Entity Framework</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ORM</td>
-                                        <td>3</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>Database</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>Oracle DB</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MS SQL Server</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>PL/SQL</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>T-SQL</td>
-                                        <td>3</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>Redis</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MongoDB</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MySQL</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>OtherNoSQL</td>
-                                        <td>0</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>Testing, Continuous Integration & Delivery</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>MS Test/Nunit</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>SpecFlow</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fluent Assertions</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>NSubstitute/ Moq</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Selenium IDE</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Selenium WebDriver</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Git/SVN</td>
-                                        <td>3</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>VS Test Agent and Test Controller</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jenkins/ Travis</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Team Foundation Server</td>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Docker/ Vagrant</td>
-                                        <td>0</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>Front End</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>HTML5</td>
-                                        <td>4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CSS3</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>JavaScript</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>TypeScript</td>
-                                        <td>1</td>
-                                    </tr>           
-                                    <tr>
-                                        <td>Angular</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vue.JS</td>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Node.JS</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>JQuery</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Browser Compatibilty Tuning</td>
-                                        <td>3</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>NPM</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Webpack</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Search Engine Optimization(SEO)</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CSS Extension Language and Tools(Sass...)</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Web Performance Optimiztion and Tool(Request combined, static files, Page
-                                            Speed...)</td>
-                                        <td>2</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Other</p>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>XML/XSLT</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>JSON</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>HTTPS/SSL</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>IIS Tuning</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>OOP</td>
-                                        <td>3</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="table-containter">
-                                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                                    <tr>
-                                        <td>TDD</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Design Pattern</td>
-                                        <td>2</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </li>
+                <li class="clearfix">
+                    <span class="job_title">■ Web Engineer</span>
+                    <span class="location">台北市</span>
+                    <span class="date">Jan 2016 - Nov 2019</span>
+                    <p class="company">華冠證券投資顧問股份有限 · Full-Time</p>
+                    <p>
+                        Developed and maintained web applications, focusing on front-end technologies such
+                        as HTML, CSS, JavaScript, and Vue.js. Ensured optimal website performance and SEO
+                        best practices.
+                    </p>
+            </ul>
+        </section>
+        <!-- Education -->
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li class="clearfix">
+                    <span class="job_title">碩士，資訊管理學系</span>
+                    <span class="location">銘傳大學</span>
+                    <span class="date">2012 - 2014</span>
+                </li>
+                <li class="clearfix">
+                    <span class="job_title">學士，資訊管理學系</span>
+                    <span class="location">銘傳大學</span>
+                    <span class="date">2008 - 2012</span>
+                </li>
+            </ul>
+        </section>
+        <!-- Skills -->
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><span class="tags">AGV (Automated Guided Vehicle) </span></li>
+                <li><span class="tags">Web Development (ASP.NET, JavaScript, HTML, CSS)</span></li>
+                <li><span class="tags">Project Management</span></li>
+                <li><span class="tags">System Automation</span></li>
+                <li><span class="tags">Database Management (MS SQL)</span></li>
+                <li><span class="tags">System Analysis and Architecture</span></li>
+                <li><span class="tags">Front-end Development (Vue.js)</span></li>
+                <li><span class="tags">Back-end Development (ASP.NET MVC, Web API)</span></li>
+                <li><span class="tags">SEO Optimization</span></li>
+                <li><span class="tags">Performance Optimization</span></li>
+                <li><span class="tags">Cross-functional Team Collaboration</span></li>
+ 
+ 
+            </ul>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $("a[href^='#']").click(function (e) {
             e.preventDefault();
 
-            var position = $($(this).attr("href")).offset().top;
+            var job_title = $($(this).attr("href")).offset().top;
 
             $("body, html").animate({
-                scrollTop: position
+                scrollTop: job_title
             } /* speed */);
         });
     </script>
