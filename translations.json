@@ -1,0 +1,18 @@
+{
+  "zh": {
+    "intro": "目前為八年全端開發經驗的資深工程師，目前專注於系統自動化、網站開發與專案管理。具備設計與導入自動化搬運車（AGV）作業流程的實務能力，並擅長開發應用於物料搬運的網頁化操作平台，致力於提升作業效率與流程數位化。",
+    "about": "擁有超過八年軟體開發、系統自動化與專案管理經驗的資深工程師。擅長設計與實施自動導引車（AGV）作業流程、開發網頁化平台，以及管理複雜專案。具備前後端開發能力，並專注於系統分析、架構設計與效能優化。",
+    "jq.intro": "專於規劃客戶工廠或倉儲現場中各類物料搬運任務的自動導引車（AGV）作業流程，並開發網頁化平台以呈現與管理所有相關資訊。",
+    "wx.intro": "專注於後端開發，涵蓋 ASP.NET MVC、Web API 與 MS SQL 等技術，參與開發高效且具擴展性的網頁應用程式。",
+    "ld.intro": "負責管理與執行多項專案，確保如期交付並達成高品質成果。與跨部門團隊緊密合作，成功推動專案落地與實施。",
+    "hg.intro": "負責開發與維護網頁應用程式，專注於 HTML、CSS、JavaScript 及 Vue.js 等前端技術。確保網站效能最佳化並遵循 SEO 最佳實務。"
+  },
+  "en": { 
+    "intro": "A senior full-stack engineer with eight years of experience, currently focusing on system automation, web development, and project management. Proficient in designing and implementing operational workflows for automated guided vehicles (AGVs), and experienced in developing web-based platforms for material handling, aiming to enhance operational efficiency and drive process digitalization.",
+    "about": "Experienced Senior Engineer with over 8 years of professional experience in software development,system automation, and project management. Skilled in designing and implementing AGV operations,developing web-based platforms, and managing complex projects.Adept at working in both front-end and back-end development,with a strong focus on system analysis, architecture, and performance optimization.",
+    "jq.intro": "Work ExperiSpecializing in planning AGV (Automated Guided Vehicle) operations for various types of material handling tasks within customer factories or warehouse sites. Developing web-based platforms to present and manage all relevant information.ence",
+    "wx.intro": "Focused on back-end development, including working with ASP.NET MVC, Web API, and MS SQL. Contributed to the development of robust and scalable web applications.  ",
+    "ld.intro": "Managed and executed various projects, ensuring timely delivery and qualityoutcomes. Worked closely with cross-functional teams to deliver successful project implementations.",
+    "hg.intro": "Developed and maintained web applications, focusing on front-end technologies such as HTML, CSS, JavaScript, and Vue.js. Ensured optimal website performance and SEO best practices."
+  }
+} 

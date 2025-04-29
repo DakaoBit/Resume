@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+ 
 .toolkit {
   position: fixed;
   left: 20px;
@@ -34,6 +34,7 @@ body {
   border-radius: 50%;
   border: #48A6A7 solid 2px;
   transition: background-color 0.3s ease;
+  margin-top: 3px;
 }
 
 .toolkit a:hover {
@@ -151,7 +152,7 @@ p {
 
 /* 個人摘要 */
 .about {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 900;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -211,6 +212,13 @@ p {
   font-size: 0.875rem;
   float: right;
   color: #9ca3af;
+}
+
+.section ul li p.item {
+  background-color: #eee;
+  padding: 20px;
+  line-height: 30px;
+  border-radius: 5px;
 }
 
 .section ul li .tags {
