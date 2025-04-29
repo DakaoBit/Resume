@@ -16,7 +16,32 @@ body {
   padding: 0;
 }
 
-.navbox{
+.toolkit {
+  position: fixed;
+  left: 20px;
+
+}
+
+.toolkit a {
+  text-decoration: none;
+  color: #48A6A7;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: #48A6A7 solid 2px;
+  transition: background-color 0.3s ease;
+}
+
+.toolkit a:hover {
+  color: #000;
+  background-color: #3b8a8a;
+}
+
+.navbox {
   position: fixed;
   left: 20px;
   top: 50%;
@@ -33,7 +58,7 @@ body {
   padding: 10px;
 }
 
-.navbox li a{
+.navbox li a {
   display: block;
   padding: 5px;
   color: #fff;
@@ -43,12 +68,12 @@ body {
 }
 
 .navbox li a:hover,
-.navbox li a.active  {
+.navbox li a.active {
   color: #000;
   background-color: #3b8a8a;
 }
- 
- 
+
+
 
 .container {
   max-width: 800px;
@@ -95,21 +120,25 @@ p {
 }
 
 .header .contact a {
-  color: #a6a8aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #48A6A7;
   text-decoration: none;
   font-weight: bold;
-  border: 1px solid #a6a8aa;
-  border-radius: 8px;
+  border: 1px solid #48A6A7;
+  border-radius: 50%;
   padding: 4px;
   margin-left: 3px;
   transition: color 0.2s, border-color 0.2s, background-color 0.2s;
 }
 
 .header .contact a:hover {
-  color: #48A6A7;
+  color: #000;
   border-color: #48A6A7;
-  background-color: #f0fafa;
-  text-decoration: underline;
+  background-color: #6b7280;
 }
 
 .profile-pic {
@@ -200,17 +229,17 @@ p {
   display: table;
   clear: both;
 }
-  
+
 .skill-topic {
   font-size: 1rem;
   font-weight: 900;
   margin-bottom: 16px;
-  background-color: #a6a8aa; 
+  background-color: #a6a8aa;
   color: #000;
   cursor: pointer;
-  display: block; 
+  display: block;
   border-radius: 3px;
-    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
 }
 
 .skill-topic:hover {
@@ -220,5 +249,11 @@ p {
 }
 
 .skill-topic h3 {
- display: inline;
+  display: inline;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
 }
