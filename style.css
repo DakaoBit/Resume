@@ -16,11 +16,45 @@ body {
   padding: 0;
 }
 
+.navbox{
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  background-color: #48A6A7;
+  border-radius: 10px;
+  box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbox ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.navbox li a{
+  display: block;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbox li a:hover,
+.navbox li a.active  {
+  color: #000;
+  background-color: #3b8a8a;
+}
+ 
+ 
+
 .container {
   max-width: 800px;
   margin: 40px auto;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 32px;
 }
@@ -78,14 +112,12 @@ p {
   text-decoration: underline;
 }
 
-
-
-.profile_pic {
+.profile-pic {
   width: 200px;
   height: 200px;
-  border: solid 2px #48A6A7;
+  border: solid 3px #000000;
   border-radius: 50%;
-  box-shadow: 2px 3px #48A6A7;
+  box-shadow: 0 0 5px 5px #48A6A7;
 }
 
 /* 個人摘要 */
@@ -98,7 +130,7 @@ p {
 }
 
 .about p {
-  margin-top: -20px; 
+  margin-top: -20px;
 }
 
 /* 各章節 */
@@ -167,4 +199,26 @@ p {
   content: "";
   display: table;
   clear: both;
+}
+  
+.skill-topic {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  background-color: #a6a8aa; 
+  color: #000;
+  cursor: pointer;
+  display: block; 
+  border-radius: 3px;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.skill-topic:hover {
+  color: #48A6A7;
+  border-color: #48A6A7;
+  background-color: #eee;
+}
+
+.skill-topic h3 {
+ display: inline;
 }

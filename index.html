@@ -22,18 +22,17 @@
 </head>
 
 <body>
-    <!-- <div class="navbox">
+    <!--navigation -->
+    <div class="navbox">
         <div class="navbox_link">
             <ul>
-                <li><a href="#Contact">聯絡資訊</a> </li>
-                <li><a href="#Education">學位</a></li>
-                <li><a href="#Skills">技術能力</a></li>
-                <li><a href="#Profile">個人簡述</a></li>
-                <li><a href="#WorkExperience">工作經驗</a></li>
-                <li><a href="#Checklist">個人技術清單</a></li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
             </ul>
         </div>
-    </div> -->
+    </div>
     <div class="container">
         <header class="header row">
             <div class="col-8">
@@ -55,7 +54,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <img class="profile_pic"
+                <img class="profile-pic"
                     src="https://media.licdn.com/dms/image/v2/C5603AQHp1qxFjHuYSA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1662807031256?e=1751500800&v=beta&t=Nuwf7W_JM9jrwL5KI3mFU6F9SAVhSeWO-PFAYfjqbY0"
                     alt="Stan Wang">
 
@@ -63,7 +62,7 @@
 
         </header>
         <!--About-->
-        <section class="about">
+        <section id="about" class="about">
             <h2>About</h2>
             <p>
                 Experienced Senior Engineer with over 8 years of professional experience in software development,
@@ -74,7 +73,7 @@
             </p>
         </section>
         <!-- Work Experience -->
-        <section class="section">
+        <section id="work-experience" class="section">
             <h2>Work Experience</h2>
             <ul>
                 <li class="clearfix">
@@ -122,7 +121,7 @@
             </ul>
         </section>
         <!-- Education -->
-        <section class="section">
+        <section id="education" class="section">
             <h2>Education</h2>
             <ul>
                 <li class="clearfix">
@@ -138,34 +137,106 @@
             </ul>
         </section>
         <!-- Skills -->
-        <section class="section">
+        <section id="skills" class="section">
             <h2>Skills</h2>
-            <ul>
-                <li><span class="tags">AGV (Automated Guided Vehicle) </span></li>
-                <li><span class="tags">Web Development (ASP.NET, JavaScript, HTML, CSS)</span></li>
+            <button class="skill-topic" data-topic="language">
+                <h3>Language</h3>
+            </button>
+            <ul class="skill-list" data-topic="language" style="display:none;">
+                <li><span class="tags">JavaScript</span></li>
+                <li><span class="tags">HTML</span></li>
+                <li><span class="tags">CSS</span></li>
+                <li><span class="tags">MS SQL</span></li>
+            </ul>
+            <button class="skill-topic" data-topic="framework">
+                <h3>Framework</h3>
+            </button>
+            <ul class="skill-list" data-topic="framework" style="display:none;">
+                <li><span class="tags">ASP.NET</span></li>
+                <li><span class="tags">Vue.js</span></li>
+            </ul>
+            <button class="skill-topic" data-topic="general">
+                <h3>General Development Skills</h3>
+            </button>
+            <ul class="skill-list" data-topic="general" style="display:none;">
+                <li><span class="tags">Web Development</span></li>
                 <li><span class="tags">Project Management</span></li>
                 <li><span class="tags">System Automation</span></li>
-                <li><span class="tags">Database Management (MS SQL)</span></li>
                 <li><span class="tags">System Analysis and Architecture</span></li>
-                <li><span class="tags">Front-end Development (Vue.js)</span></li>
-                <li><span class="tags">Back-end Development (ASP.NET MVC, Web API)</span></li>
                 <li><span class="tags">SEO Optimization</span></li>
                 <li><span class="tags">Performance Optimization</span></li>
                 <li><span class="tags">Cross-functional Team Collaboration</span></li>
- 
- 
             </ul>
+            <button class="skill-topic" data-topic="backend">
+                <h3>Backend Skills</h3>
+            </button>
+            <ul class="skill-list" data-topic="backend" style="display:none;">
+                <li><span class="tags">Back-end Development (ASP.NET MVC, Web API)</span></li>
+                <li><span class="tags">Database Management (MS SQL)</span></li>
+            </ul>
+            <!-- Modal Dialog -->
+            <div id="skill-modal" class="modal"
+                style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);justify-content:center;align-items:center;">
+                <div class="modal-content"
+                    style="background:#fff;padding:24px 32px;border-radius:8px;min-width:260px;max-width:90vw;max-height:80vh;overflow:auto;position:relative;">
+                    <span id="modal-close"
+                        style="position:absolute;top:8px;right:16px;font-size:1.5em;cursor:pointer;">&times;</span>
+                    <h3 id="modal-title"></h3>
+                    <div id="modal-body"></div>
+                </div>
+            </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $("a[href^='#']").click(function (e) {
-            e.preventDefault();
 
-            var job_title = $($(this).attr("href")).offset().top;
 
-            $("body, html").animate({
-                scrollTop: job_title
-            } /* speed */);
+        document.addEventListener("DOMContentLoaded", () => {
+            // Smooth Scrolling for Navigation Links
+            $("a[href^='#']").click(function (e) {
+                e.preventDefault();
+
+                var section = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: section
+                }, 800);
+
+                // 移除所有 active
+                $(".navbox li a").removeClass("active");
+                // 為目前點擊的加上 active
+                $(this).addClass("active");
+            });
+
+            //Modal Dialog for Skills
+            document.querySelectorAll('.skill-topic').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var topic = btn.getAttribute('data-topic');
+                    var ul = document.querySelector('.skill-list[data-topic="' + topic + '"]');
+                    var modal = document.getElementById('skill-modal');
+                    var modalTitle = document.getElementById('modal-title');
+                    var modalBody = document.getElementById('modal-body');
+                    var h3 = btn.querySelector('h3');
+                    modalTitle.textContent = h3 ? h3.textContent : btn.textContent;
+                    modalBody.innerHTML = '';
+                    if (ul) {
+                        var clone = ul.cloneNode(true);
+                        clone.style.display = 'block';
+                        modalBody.appendChild(clone);
+                    }
+                    modal.style.display = 'flex';
+                });
+            });
+            // Close Modal Dialog
+            document.getElementById('modal-close').onclick = function () {
+                document.getElementById('skill-modal').style.display = 'none';
+            };
+            // Close Modal Dialog when clicking outside of it
+            document.getElementById('skill-modal').addEventListener('click', function (e) {
+                if (e.target === this) {
+                    this.style.display = 'none';
+                }
+            });
         });
     </script>
 </body>
